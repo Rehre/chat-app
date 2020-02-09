@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Akmal Maulana Azzam" />
+    <meta name="description" content="Realtime Chat App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h4 class="header__title">Chatroom</h4>
+        <div class="header__user-count">
+          <div class="header__user-count__online-icon"></div>
+          <h5 id="user-count" class="header__user-count__text">online</h5>
+        </div>
+      </div>
+      <div id="chat-box" class="chat-body"></div>
+      <div class="footer">
+        <div class="footer__message-input-container">
+          <textarea id="message-input" class="footer__message-input"></textarea>
+          <label id="message-input-label">Type Your Message</label>
+        </div>
+        <button id="send-button" class="footer__send-button">SEND</button>
+      </div>
+    </div>
+    <script src="/js/chat.js"></script>
+  </body>
+</html>

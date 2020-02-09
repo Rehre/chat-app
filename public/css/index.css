@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.2fr 2fr 0.25fr;
+}
+
+.header {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header__title {
+  font-size: 20px;
+}
+
+.header__user-count {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.header__user-count__online-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.header__user-count__text {
+  display: inline-block;
+}
+
+.footer {
+  padding: 20px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 0.1fr;
+  align-items: center;
+  justify-items: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer__message-input-container {
+  width: 100%;
+  justify-self: flex-start;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  height: 40px;
+  top: 50%;
+  left: 10px;
+  margin-top: -8px;
+  z-index: -1;
+  color: gray;
+}
+
+.footer__message-input {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  border: 1px solid #e0e0e0;
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  resize: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer__send-button {
+  background-color: #eeeeee;
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.footer__send-button:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.footer__send-button:active {
+  background-color: #eeeeee;
+}
+
+.chat-body {
+  padding: 10px;
+  overflow: auto;
+}
+
+.message-item,
+.message-item-self {
+  max-width: 200px;
+  height: auto;
+}
+
+.message-username,
+.message-username-self {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.message-box,
+.message-box-self {
+  max-width: 200px;
+  height: auto;
+  word-wrap: break-word;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.message-item-self {
+  margin-left: auto;
+}
+
+.message-username-self {
+  text-align: right;
+}
